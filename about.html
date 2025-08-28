@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - CourseHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/60 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+ <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <div class="h-9 w-9 bg-indigo-500/20 border border-indigo-400/30 rounded-xl grid place-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-300" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3.75A2.25 2.25 0 0 1 6.75 1.5h10.5A2.25 2.25 0 0 1 19.5 3.75v16.5A2.25 2.25 0 0 1 17.25 22.5H6.75A2.25 2.25 0 0 1 4.5 20.25V3.75Zm3 1.5a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Zm0 3a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Zm0 3a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5h-6Z"/></svg>
+        </div>
+        <span class="font-semibold text-lg">CourseHub</span>
+      </div>
+
+      
+      <ul class="hidden md:flex gap-6 text-sm font-medium">
+        <li><a href="index.html" class="hover:text-indigo-300">Home</a></li>
+        <li><a href="courses.html" class="hover:text-indigo-300">Courses</a></li>
+        <li><a href="about.html" class="text-indigo-400 font-semibold">About</a></li>
+        
+      </ul>
+      <div class="hidden md:flex gap-3">
+        <a href="signin.html" class="px-4 py-1.5 rounded-lg border border-indigo-400/50 text-sm bg-indigo-600">Sign In</a>
+        <a href="register.html" class="px-4 py-1.5 rounded-lg bg-indigo-500 text-sm font-medium hover:bg-indigo-400">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative h-72 flex items-center justify-center text-center bg-cover bg-center"
+           style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-2xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">About CourseHub</h1>
+      <p class="text-gray-300 text-lg">Empowering learners with knowledge anytime, anywhere.</p>
+    </div>
+  </section>
+
+  <!-- Who We Are -->
+  <main class="flex-grow px-6 py-12 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
+        <p class="text-gray-300 leading-relaxed mb-6">
+          CourseHub is a modern learning platform designed to connect learners and educators across the globe. 
+          Our mission is to make education accessible, engaging, and affordable.
+        </p>
+        <h2 class="text-2xl font-semibold mb-3">Our Mission</h2>
+        <p class="text-gray-400 leading-relaxed">
+          To bridge the gap between traditional education and modern digital learning by creating a 
+          community-driven platform where knowledge is shared, discovered, and applied.
+        </p>
+      </div>
+      <div>
+        <img src="assets/Images/learningimg.jpeg" 
+             alt="Learning" 
+             class="rounded-2xl shadow-lg border border-white/20" />
+      </div>
+    </div>
+
+    <!-- Values -->
+    <section class="mt-16">
+      <h2 class="text-3xl font-bold text-center mb-10">Our Core Values</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 bg-white/10 rounded-xl border border-white/20 shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Accessibility</h3>
+          <p class="text-gray-400">Learning should be available to everyone, regardless of location.</p>
+        </div>
+        <div class="p-6 bg-white/10 rounded-xl border border-white/20 shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Innovation</h3>
+          <p class="text-gray-400">We use modern technology to create engaging experiences.</p>
+        </div>
+        <div class="p-6 bg-white/10 rounded-xl border border-white/20 shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Community</h3>
+          <p class="text-gray-400">We believe in collaboration and knowledge-sharing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="mt-20">
+      <h2 class="text-3xl font-bold text-center mb-10">Our Story</h2>
+      <div class="space-y-6 border-l-2 border-indigo-400 pl-6">
+        <div>
+          <h3 class="text-xl font-semibold">2018 – The Idea</h3>
+          <p class="text-gray-400">CourseHub started as a small initiative by passionate educators.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">2020 – Growth</h3>
+          <p class="text-gray-400">Expanded to thousands of learners across multiple countries.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">2023 – Recognition</h3>
+          <p class="text-gray-400">Partnered with leading institutions and recognized globally.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="mt-20">
+      <h2 class="text-3xl font-bold text-center mb-10">Meet Our Team</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 bg-white/10 rounded-xl">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-24 h-24 mx-auto rounded-full mb-4" />
+          <h3 class="font-semibold text-lg">John Smith</h3>
+          <p class="text-gray-400 text-sm">Founder & CEO</p>
+        </div>
+        <div class="p-6 bg-white/10 rounded-xl">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-24 h-24 mx-auto rounded-full mb-4" />
+          <h3 class="font-semibold text-lg">Sarah Lee</h3>
+          <p class="text-gray-400 text-sm">Head of Learning</p>
+        </div>
+        <div class="p-6 bg-white/10 rounded-xl">
+          <img src="https://randomuser.me/api/portraits/men/47.jpg" class="w-24 h-24 mx-auto rounded-full mb-4" />
+          <h3 class="font-semibold text-lg">Mark Davis</h3>
+          <p class="text-gray-400 text-sm">Tech Director</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="mt-20">
+      <h2 class="text-3xl font-bold text-center mb-10">Why Choose CourseHub?</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 bg-white/10 rounded-xl">
+          <h3 class="text-xl font-semibold">Flexible Learning</h3>
+          <p class="text-gray-400">Study at your own pace with lifetime access to content.</p>
+        </div>
+        <div class="p-6 bg-white/10 rounded-xl">
+          <h3 class="text-xl font-semibold">Expert Tutors</h3>
+          <p class="text-gray-400">Learn from industry professionals and educators worldwide.</p>
+        </div>
+        <div class="p-6 bg-white/10 rounded-xl">
+          <h3 class="text-xl font-semibold">Affordable</h3>
+          <p class="text-gray-400">High-quality education without breaking the bank.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="mt-20">
+      <h2 class="text-3xl font-bold text-center mb-10">What Students Say</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="p-6 bg-white/10 rounded-xl shadow-md">
+          <p class="text-gray-300 italic">"CourseHub completely changed the way I learn. The courses are easy to follow and practical!"</p>
+          <p class="mt-4 text-sm text-indigo-300">– Priya, Student</p>
+        </div>
+        <div class="p-6 bg-white/10 rounded-xl shadow-md">
+          <p class="text-gray-300 italic">"The community support and the quality of instructors are top-notch. Highly recommend!"</p>
+          <p class="mt-4 text-sm text-indigo-300">– Alex, Learner</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="mt-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Start Learning?</h2>
+      <p class="text-gray-400 mb-6">Join thousands of learners today and unlock your potential with CourseHub.</p>
+      <a href="register.html" class="px-6 py-3 bg-indigo-600 rounded-lg font-semibold hover:bg-indigo-500">Get Started</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-400 py-6 border-t border-white/10 mt-12">
+    © 2025 CourseHub – All rights reserved.
+  </footer>
+</body>
+</html>

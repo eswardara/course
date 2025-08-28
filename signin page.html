@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign In - CourseHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/60 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="font-bold text-lg">CourseHub</a>
+      <ul class="hidden md:flex gap-6 text-sm font-medium">
+        <li><a href="index.html" class="hover:text-indigo-300">Home</a></li>
+        <li><a href="courses.html" class="hover:text-indigo-300">Courses</a></li>
+        <li><a href="about.html" class="hover:text-indigo-300">About</a></li>
+        <li><a href="more.html" class="hover:text-indigo-300">More</a></li>
+      </ul>
+      <div class="hidden md:flex gap-3">
+        <a href="signin.html" class="px-4 py-1.5 rounded-lg border border-indigo-400/50 text-sm bg-indigo-600">Sign In</a>
+        <a href="register.html" class="px-4 py-1.5 rounded-lg bg-indigo-500 text-sm font-medium hover:bg-indigo-400">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Form Section -->
+  <main class="flex-grow flex items-center justify-center p-6">
+    <div class="w-full max-w-md bg-white/10 backdrop-blur-xl rounded-2xl shadow-xl p-8 border border-white/20">
+      <h2 class="text-2xl font-bold text-center mb-6">Sign In to CourseHub</h2>
+
+      <form class="space-y-5">
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-sm mb-1">Email Address</label>
+          <input type="email" id="email" required
+            class="w-full px-4 py-2 rounded-lg bg-white/20 text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-indigo-400" 
+            placeholder="you@example.com"/>
+        </div>
+
+        <!-- Password -->
+        <div>
+          <label for="password" class="block text-sm mb-1">Password</label>
+          <input type="password" id="password" required
+            class="w-full px-4 py-2 rounded-lg bg-white/20 text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-indigo-400" 
+            placeholder="********"/>
+        </div>
+
+        <!-- Remember me -->
+        <div class="flex items-center justify-between text-sm">
+          <label class="flex items-center gap-2">
+            <input type="checkbox" class="accent-indigo-500"/>
+            Remember me
+          </label>
+          <a href="#" class="text-indigo-400 hover:underline">Forgot password?</a>
+        </div>
+
+        <!-- Sign In Button -->
+        <button type="submit"
+          class="w-full bg-indigo-600 hover:bg-indigo-500 py-2.5 rounded-lg font-semibold shadow-md transition">
+          Sign In
+        </button>
+      </form>
+
+      <!-- Divider -->
+      <div class="flex items-center gap-4 my-6">
+        <hr class="flex-grow border-gray-600">
+        <span class="text-gray-400 text-sm">OR</span>
+        <hr class="flex-grow border-gray-600">
+      </div>
+
+      <!-- Social Logins (Optional) -->
+      <div class="flex gap-3">
+        <button class="flex-1 py-2 bg-white text-black rounded-lg font-medium hover:bg-gray-200">Google</button>
+        <button class="flex-1 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-500">Facebook</button>
+      </div>
+
+      <!-- Register Link -->
+      <p class="text-center text-sm text-gray-400 mt-6">
+        Don’t have an account? 
+        <a href="register.html" class="text-indigo-400 hover:underline">Register</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-400 py-6 border-t border-white/10">
+    © 2025 CourseHub – All rights reserved.
+  </footer>
+</body>
+</html>

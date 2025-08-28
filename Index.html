@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Courses Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- SwiperJS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/70 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <div class="h-9 w-9 bg-indigo-500/20 border border-indigo-400/30 rounded-xl grid place-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-300" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3.75A2.25 2.25 0 0 1 6.75 1.5h10.5A2.25 2.25 0 0 1 19.5 3.75v16.5A2.25 2.25 0 0 1 17.25 22.5H6.75A2.25 2.25 0 0 1 4.5 20.25V3.75Zm3 1.5a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Zm0 3a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Zm0 3a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5h-6Z"/></svg>
+        </div>
+        <span class="font-semibold text-lg">CourseHub</span>
+      </div>
+
+      <!-- Menu -->
+      <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+         <li><a href="Index.html" class="hover:text-indigo-300">Home</a></li>
+        <li><a href="course.html" class="hover:text-indigo-300">Courses</a></li>
+        <li><a href="about.html" class="hover:text-indigo-300">About</a></li>
+        
+      </ul>
+
+      <!-- Auth Buttons -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="signin.html" class="px-4 py-1.5 rounded-lg border border-indigo-400/50 text-sm hover:bg-indigo-500/20 transition">Sign In</a>
+        <a href="register.html" class="px-4 py-1.5 rounded-lg bg-indigo-600 text-sm font-medium hover:bg-indigo-500 transition">Register</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button id="menuBtn" class="md:hidden rounded-lg p-2 hover:bg-white/10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 bg-slate-800/80">
+      <ul class="flex flex-col p-4 space-y-3 text-sm font-medium">
+        <li><a href="Index.html" class="hover:text-indigo-300">Home</a></li>
+        <li><a href="course.html" class="hover:text-indigo-300">Courses</a></li>
+        <li><a href="about.html" class="hover:text-indigo-300">About</a></li>
+        
+      </ul>
+      <div class="flex flex-col gap-3 p-4 border-t border-white/10">
+        <a href="signin.html" class="px-4 py-2 rounded-lg border border-indigo-400/50 text-center text-sm hover:bg-indigo-500/20 transition">Sign In</a>
+        <a href="register.html" class="px-4 py-2 rounded-lg bg-indigo-600 text-center text-sm font-medium hover:bg-indigo-500 transition">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Slider -->
+  <section class="relative">
+    <div class="swiper bannerSwiper h-[70vh]">
+      <div class="swiper-wrapper">
+        
+        <!-- Banner Slide 1 -->
+        <div class="swiper-slide relative bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80')">
+          <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Learn Anytime, Anywhere</h1>
+            <p class="max-w-2xl text-gray-200 mb-6">Access world-class courses and improve your skills from the comfort of your home.</p>
+            <a href="courses.html" class="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-medium">Explore Courses</a>
+          </div>
+        </div>
+
+        <!-- Banner Slide 2 -->
+        <div class="swiper-slide relative bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1600&q=80')">
+          <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Interactive Learning</h1>
+            <p class="max-w-2xl text-gray-200 mb-6">Engage with interactive content and real-world projects.</p>
+            <a href="register.html" class="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-medium">Join Now</a>
+          </div>
+        </div>
+
+        <!-- Banner Slide 3 -->
+        <div class="swiper-slide relative bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80')">
+          <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Build Your Career</h1>
+            <p class="max-w-2xl text-gray-200 mb-6">Learn job-ready skills and prepare for the future of work.</p>
+            <a href="signin.html" class="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-medium">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner Nav -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev !text-white"></div>
+      <div class="swiper-button-next !text-white"></div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main id="courses" class="max-w-7xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Featured Courses</h2>
+
+    <!-- Course Swiper -->
+    <div class="swiper courseSwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg">
+            <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/dFgzHOX84xQ" allowfullscreen></iframe>
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Tailwind CSS Crash Course</h3>
+              <p class="text-sm text-gray-300">Utility-first CSS framework introduction.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg">
+            <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/hdI2bqOjy3c" allowfullscreen></iframe>
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">JavaScript Fundamentals</h3>
+              <p class="text-sm text-gray-300">Variables, functions, arrays, and DOM basics.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg">
+            <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/TNhaISOUy6Q" allowfullscreen></iframe>
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">React Hooks in Depth</h3>
+              <p class="text-sm text-gray-300">useState, useEffect, and custom hooks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between mt-4">
+        <div class="swiper-button-prev !text-white"></div>
+        <div class="swiper-button-next !text-white"></div>
+      </div>
+      <div class="swiper-pagination mt-2"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-400 py-6 border-t border-white/10">
+    © 2025 CourseHub – Built with TailwindCSS & SwiperJS
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Banner slider
+    new Swiper('.bannerSwiper', {
+      loop: true,
+      autoplay: { delay: 4000 },
+      pagination: { el: '.bannerSwiper .swiper-pagination', clickable: true },
+      navigation: { nextEl: '.bannerSwiper .swiper-button-next', prevEl: '.bannerSwiper .swiper-button-prev' },
+    });
+
+    // Course slider
+    new Swiper('.courseSwiper', {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+      pagination: { el: '.courseSwiper .swiper-pagination', clickable: true },
+      navigation: { nextEl: '.courseSwiper .swiper-button-next', prevEl: '.courseSwiper .swiper-button-prev' },
+    });
+
+    // Mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
