@@ -11,12 +11,20 @@
   <!-- Navbar -->
   <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/60 border-b border-white/10">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-      <a href="index.html" class="font-bold text-lg">CourseHub</a>
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <div class="h-9 w-9 bg-indigo-500/20 border border-indigo-400/30 rounded-xl grid place-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-300" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3.75A2.25 2.25 0 0 1 6.75 1.5h10.5A2.25 2.25 0 0 1 19.5 3.75v16.5A2.25 2.25 0 0 1 17.25 22.5H6.75A2.25 2.25 0 0 1 4.5 20.25V3.75Zm3 1.5a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Zm0 3a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Zm0 3a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5h-6Z"/></svg>
+        </div>
+        <span class="font-semibold text-lg">CourseHub</span>
+      </div>
+      <!-- <a href="index.html" class="font-bold text-lg">CourseHub</a> -->
+
       <ul class="hidden md:flex gap-6 text-sm font-medium">
-        <li><a href="index.html" class="hover:text-indigo-300">Home</a></li>
+        <li><a href="Index.html" class="hover:text-indigo-300">Home</a></li>
         <li><a href="courses.html" class="text-indigo-400 font-semibold">Courses</a></li>
         <li><a href="about.html" class="hover:text-indigo-300">About</a></li>
-        <li><a href="more.html" class="hover:text-indigo-300">More</a></li>
+        
       </ul>
       <div class="hidden md:flex gap-3">
         <a href="signin.html" class="px-4 py-1.5 rounded-lg border border-indigo-400/50 text-sm bg-indigo-600">Sign In</a>
@@ -93,6 +101,13 @@
 
     </div>
   </main>
+    <!-- Back Button -->
+<div class="max-w-7xl mx-auto px-6 mt-6">
+  <button onclick="window.history.back()" 
+          class="flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg shadow-md">
+    ← Back
+  </button>
+</div>
 
   <!-- Footer -->
   <footer class="text-center text-sm text-gray-400 py-6 border-t border-white/10">
